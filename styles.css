@@ -1,0 +1,177 @@
+/* GENERAL */
+:root {
+  --dark-purple: #211629;
+  --deep-purple: #3b224b;
+  --soft-purple: #f4ecff;
+  --accent-purple: #9b5de5;
+  --warm-white: #fffaf4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--warm-white);
+  color: #1f1f1f;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-kicker {
+  color: var(--accent-purple);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.section-intro {
+  max-width: 650px;
+}
+
+.bg-soft {
+  background: var(--soft-purple);
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(33, 22, 41, 0.92);
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.navbar.navbar-scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  background: rgba(33, 22, 41, 0.98);
+}
+
+.navbar-brand {
+  letter-spacing: 0.03em;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  padding: 130px 0 90px;
+  color: white;
+  background:
+    linear-gradient(rgba(33, 22, 41, 0.82), rgba(33, 22, 41, 0.88)),
+    url("https://placehold.co/1600x1000/3b224b/f7e9ff?text=Indie+Music+Mentorship");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-label {
+  color: #d9b7ff;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 28px;
+  padding: 2rem;
+  backdrop-filter: blur(14px);
+}
+
+/* ABOUT */
+.instagram-link {
+  color: var(--deep-purple);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.instagram-link:hover {
+  color: var(--accent-purple);
+}
+
+/* TESTIMONIALS */
+.testimonial-card {
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(33, 22, 41, 0.14) !important;
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  color: #3d3d3d;
+}
+
+/* PROGRAM */
+.accordion-button {
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--soft-purple);
+  color: var(--deep-purple);
+}
+
+/* SERVICES */
+.text-purple-light {
+  color: #d9b7ff;
+}
+
+.service-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 1.7rem;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* CONTACT */
+.contact-note {
+  background: var(--soft-purple);
+}
+
+.contact-form {
+  background: white;
+}
+
+.form-control {
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+}
+
+.form-control:focus {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 0 0.2rem rgba(155, 93, 229, 0.18);
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-purple);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 75px 0;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section .d-flex {
+    justify-content: center;
+  }
+}
