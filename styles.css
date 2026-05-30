@@ -1,7 +1,9 @@
 :root {
   --color-page: #e7e9ee;
   --color-site-bg: #dcebef;
-  --color-about-bg: #f4f9fc;
+  /* --color-about-bg: #f4f9fc; */
+  /* --color-about-bg: whitesmoke; */
+  --color-about-bg: white;
   --color-blue-section: #dcebef;
   --color-lavender-section: #f0edff;
   --color-dark-section: #1d211f;
@@ -27,14 +29,17 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   background: var(--color-page);
   color: var(--color-text);
   font-family: var(--font-body);
+  font-size: var(--font-size--sm);
 }
 
 .site-shell {
@@ -53,7 +58,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-ui);
-  font-size: var(--font-size--sm);
+  /* font-size: var(--font-size--sm); */
 }
 
 .brand,
@@ -92,11 +97,18 @@ body {
   margin: 2rem auto 2rem;
   width: fit-content;
   font-family: var(--font-display);
-  font-size: clamp(86px, 17vw, 178px);
+  /* font-size: clamp(86px, 17vw, 178px); */
+  font-size: clamp(2rem, 12vw, 6rem);
   font-weight: 400;
   line-height: 0.9;
   letter-spacing: -0.08em;
 }
+
+/* create media query to decrease font size on smaller screens */
+/* .hero h1 {
+  font-size: clamp(48px, 24vw, 86px);
+} */
+
 
 .hero-grid {
   display: grid;
@@ -108,6 +120,7 @@ body {
 }
 
 .hero-copy {
+  max-width: 500px;
   min-height: 4rem;
   display: flex;
   flex-direction: column;
@@ -121,6 +134,10 @@ body {
   line-height: 1.05;
 }
 
+.hero-copy__desc {
+  /* font-size: var(--font-size--sm); */
+}
+
 .italic {
   font-style: italic;
   line-height: 1.05;
@@ -128,15 +145,15 @@ body {
 
 .button,
 .contact-form button {
-  width: 80px;
-  padding: 8px 0;
+  width: 150px;
+  padding: .25rem .5rem;
   border: 0;
   background: var(--color-button-bg);
   color: var(--color-button-text);
   text-align: center;
   text-decoration: none;
   font-family: var(--font-ui);
-  font-size: 9px;
+  /* font-size: var(--font-size--sm); */
 }
 
 .artist-photo {
@@ -146,16 +163,20 @@ body {
   display: block;
 }
 
+.section {
+  padding: 4rem;
+}
+
 .pale-section,
 .blue-section,
 .lavender-section {
   position: relative;
 }
 .about-section {
-  min-height: 260px;
+  /* min-height: 260px; */
   background: var(--color-about-bg);
-  border: 3px solid var(--color-accent);
-  padding: 16px 58px 48px;
+  /* border: 3px solid var(--color-accent); */
+  /* padding: 16px 58px 48px; */
 }
 
 .quick-edit {
@@ -182,13 +203,33 @@ body {
   font-size: 13px;
 }
 
-.about-content,
+/* .about-content, */
 .inner {
   max-width: 562px;
   margin: 0 auto;
 }
 .inner.narrow {
   max-width: 564px;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about-content h2 {
+  margin-bottom: 24px;
+  font-size: 33px;
+}
+
+.about-content__title {}
+
+.about-content__copy {
+  /* font-size: var(--font-size--sm); */
+}
+
+
+p {
+  line-height: 1.35;
 }
 
 h2 {
@@ -200,15 +241,6 @@ h2 {
   letter-spacing: -0.04em;
 }
 
-.about-content h2 {
-  margin-bottom: 24px;
-  font-size: 33px;
-}
-.about-content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.35;
-}
 
 .dark-section {
   background: var(--color-dark-section);
@@ -420,9 +452,9 @@ h2 {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .hero h1 {
+  /* .hero h1 {
     font-size: 24vw;
-  }
+  } */
   .hero-grid,
   .contact-grid,
   .footer-grid {

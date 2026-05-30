@@ -1,88 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Willow Train</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <main class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="#home"><span class="brand-mark">◌</span><span>The Willow Train</span></a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Willow Train</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#home"
+          ><span class="brand-mark">◌</span><span>The Willow Train</span></a
+        >
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </header>
 
-    <section id="home" class="hero">
-      <h1>The Willow Train</h1>
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p>Mentorship Program</p>
-          <p class="italic">For up-and-coming indie musicians</p>
-          <a class="button" href="#contact">Reach Out</a>
+      <section id="home" class="hero">
+        <h1>The Willow Train</h1>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p>Mentorship Program</p>
+            <p class="italic">For up-and-coming indie musicians</p>
+            <p class="hero-copy__desc">
+              Find your sound. Own the stage. Coaching and community for young
+              indie musicians ready to compose, gain confidence, and begin
+              performing live.
+            </p>
+            <a class="button" href="#contact">Reach Out</a>
+          </div>
+          <img
+            class="artist-photo"
+            src="images/portrait-1.jpeg"
+            alt="Willow Saan portrait"
+          />
         </div>
-        <img class="artist-photo" src="images/portrait-1.jpeg" alt="A. Thomas singing at a microphone" />
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about-section pale-section">
-      <div class="about-content">
-        <h2>About A. Thomas</h2>
-        <p>Discover the mesmerizing world of A. Thomas, a soulful singer renowned for blending pop and R&amp;B influences into unforgettable performances.</p>
-      </div>
-    </section>
-
-    <section id="testimonials" class="testimonials-section dark-section">
-      <div class="inner narrow">
-        <h2>Testimonials</h2>
-        <p class="lead">A. Thomas's performances are truly magical. Her voice touches the soul, leaving a lasting impact on everyone who listens.</p>
-        <div class="testimonial-list">
-          <article class="testimonial-row"><div class="avatar avatar-cross"></div><p class="name">Jessica</p><p class="quote">“A. Thomas's music has the power to transport you to another world, filled with emotion and beauty.”</p></article>
-          <article class="testimonial-row"><div class="avatar avatar-arc"></div><p class="name">Michael</p><p class="quote">“Listening to A. Thomas is a transformative experience. Her music resonates deep within, evoking a range of emotions.”</p></article>
-          <article class="testimonial-row"><div class="avatar avatar-cross"></div><p class="name">Sophie</p><p class="quote">“A. Thomas's talent is unparalleled. Her voice is a gift that she shares generously with her audience.”</p></article>
+      <section id="about" class="section about-section pale-section">
+        <div class="about-content">
+          <h2 class="about-content__title">About Willow Saan</h2>
+          <p class="about-content__copy">
+            Willow Saan is a prolific songwriter with a catalogue of over 400 original songs and performance experience across the Toronto area. A 2024 semi-finalist in a Canadian national songwriting competition, she blends dream-pop ballads with soulful downtempo country, defined by her signature piano style and sultry vocals. Her sound is both intimate and atmospheric, marked by emotional depth and refined
+            musicality. Her music is streaming on all platforms. She also mentors young indie musicians and is one half of the emerging folk-rock duo Ellington Sun.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="why" class="why-section blue-section">
-      <div class="inner narrow">
-        <h2>Why Us?</h2>
-        <p class="center-copy">Choose A. Thomas for an unparalleled musical journey that will touch your heart and soul.</p>
-        <div class="why-list">
-          <article class="why-row"><p class="category">Passion</p><div><h3>Dedication</h3><p>A. Thomas's passion for music shines through in every performance, creating an unforgettable experience for her listeners.</p></div></article>
-          <article class="why-row"><p class="category">Authenticity</p><div><h3>Genuine Connection</h3><p>Experience the authenticity in A. Thomas's music, where each lyric and melody is a true reflection of her soulful spirit.</p></div></article>
-          <article class="why-row"><p class="category">Versatility</p><div><h3>Creative Expression</h3><p>A. Thomas's versatility as an artist allows her to explore diverse musical styles, ensuring a rich and engaging experience for her audience.</p></div></article>
+      <section id="testimonials" class="testimonials-section dark-section">
+        <div class="inner narrow">
+          <h2>Testimonials</h2>
+          <p class="lead">
+            A. Thomas's performances are truly magical. Her voice touches the
+            soul, leaving a lasting impact on everyone who listens.
+          </p>
+          <div class="testimonial-list">
+            <article class="testimonial-row">
+              <div class="avatar avatar-cross"></div>
+              <p class="name">Jessica</p>
+              <p class="quote">
+                “A. Thomas's music has the power to transport you to another
+                world, filled with emotion and beauty.”
+              </p>
+            </article>
+            <article class="testimonial-row">
+              <div class="avatar avatar-arc"></div>
+              <p class="name">Michael</p>
+              <p class="quote">
+                “Listening to A. Thomas is a transformative experience. Her
+                music resonates deep within, evoking a range of emotions.”
+              </p>
+            </article>
+            <article class="testimonial-row">
+              <div class="avatar avatar-cross"></div>
+              <p class="name">Sophie</p>
+              <p class="quote">
+                “A. Thomas's talent is unparalleled. Her voice is a gift that
+                she shares generously with her audience.”
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="contact-section lavender-section">
-      <div class="inner contact-grid">
-        <div class="contact-copy">
-          <h2>Contact Us</h2>
-          <p class="eyebrow">Get in Touch</p>
-          <p class="lead">For inquiries, bookings, or collaborations, feel free to reach out to us. We'd love to hear from you!</p>
+      <section id="why" class="why-section blue-section">
+        <div class="inner narrow">
+          <h2>Why Us?</h2>
+          <p class="center-copy">
+            Choose A. Thomas for an unparalleled musical journey that will touch
+            your heart and soul.
+          </p>
+          <div class="why-list">
+            <article class="why-row">
+              <p class="category">Passion</p>
+              <div>
+                <h3>Dedication</h3>
+                <p>
+                  A. Thomas's passion for music shines through in every
+                  performance, creating an unforgettable experience for her
+                  listeners.
+                </p>
+              </div>
+            </article>
+            <article class="why-row">
+              <p class="category">Authenticity</p>
+              <div>
+                <h3>Genuine Connection</h3>
+                <p>
+                  Experience the authenticity in A. Thomas's music, where each
+                  lyric and melody is a true reflection of her soulful spirit.
+                </p>
+              </div>
+            </article>
+            <article class="why-row">
+              <p class="category">Versatility</p>
+              <div>
+                <h3>Creative Expression</h3>
+                <p>
+                  A. Thomas's versatility as an artist allows her to explore
+                  diverse musical styles, ensuring a rich and engaging
+                  experience for her audience.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-        <form class="contact-form">
-          <div class="form-row"><label>First name *<input type="text" /></label><label>Last name *<input type="text" /></label></div>
-          <label>Message *<textarea></textarea></label>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer-section dark-section">
-      <div class="inner footer-grid">
-        <div><h2>A. Thomas</h2><p>123-456-7890<br />info@mysite.com</p><p>500 Terry Francine St. San<br />Francisco, CA 94158</p></div>
-        <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Accessibility Statement</a><p>© 2035 by A. Thomas.<br />Powered and secured by Wix</p></div>
-      </div>
-    </footer>
-  </main>
-</body>
+      <section id="contact" class="contact-section lavender-section">
+        <div class="inner contact-grid">
+          <div class="contact-copy">
+            <h2>Contact Us</h2>
+            <p class="eyebrow">Get in Touch</p>
+            <p class="lead">
+              For inquiries, bookings, or collaborations, feel free to reach out
+              to us. We'd love to hear from you!
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <label>First name *<input type="text" /></label
+              ><label>Last name *<input type="text" /></label>
+            </div>
+            <label>Message *<textarea></textarea></label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer-section dark-section">
+        <div class="inner footer-grid">
+          <div>
+            <h2>A. Thomas</h2>
+            <p>123-456-7890<br />info@mysite.com</p>
+            <p>500 Terry Francine St. San<br />Francisco, CA 94158</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a
+            ><a href="#">Accessibility Statement</a>
+            <p>© 2035 by A. Thomas.<br />Powered and secured by Wix</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
