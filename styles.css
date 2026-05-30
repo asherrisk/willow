@@ -18,6 +18,10 @@
   --font-display: Didot, 'Bodoni 72', 'Bodoni MT', 'Times New Roman', serif;
   --font-body: Georgia, 'Times New Roman', serif;
   --font-ui: Arial, Helvetica, sans-serif;
+
+  --font-size--sm: 1rem;
+  --font-size--md: 1.5rem;
+  --font-size--lg: 2rem;
 }
 
 * {
@@ -42,14 +46,14 @@ body {
 }
 
 .site-header {
-  height: 34px;
+  height: 2rem;
   padding: 0 56px;
   border-bottom: 1px solid #c9d7da;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-ui);
-  font-size: 8px;
+  font-size: var(--font-size--sm);
 }
 
 .brand,
@@ -95,24 +99,30 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 230px;
-  gap: 76px;
+  grid-template-columns: 1fr 230px; /* TODO: change based on img */
+  gap: 1rem;
   align-items: start;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .hero-copy {
-  min-height: 210px;
+  min-height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.hero-copy p {
-  max-width: 265px;
+.hero-copy > p:first-of-type {
+  /* max-width: 265px; */
   margin: 0;
-  font-size: 13px;
+  font-size: 2rem;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+}
+
+.italic {
+  font-style: italic;
+  line-height: 1.05;
 }
 
 .button,
