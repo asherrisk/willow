@@ -62,9 +62,13 @@ body {
   min-height: 2rem;
   padding: 6px 56px;
   border-bottom: 1px solid #c9d7da;
+  background: var(--color-site-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 40;
   font-family: var(--font-ui);
   /* font-size: var(--font-size--sm); */
 }
@@ -93,12 +97,6 @@ body {
   line-height: 1;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  justify-content: flex-end;
-}
 .hero {
   padding: 0 56px 36px;
 }

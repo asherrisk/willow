@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Willow Train</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav-menu.css" />
   </head>
   <body>
     <main class="site-shell">
@@ -12,7 +13,18 @@
         <a class="brand" href="#home"
           ><span class="brand-mark">◌</span><span>The Willow Train</span></a
         >
-        <nav class="nav" aria-label="Main navigation">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" class="nav" aria-label="Main navigation">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#songwriting-camps">Songwriting Camps</a>
@@ -171,6 +183,7 @@
         </div>
       </footer>
     </main>
+    <script src="nav-menu.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
