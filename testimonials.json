@@ -1,22 +1,67 @@
 [
   {
-    "name": "Olivia Cole",
-    "image": "https://i.pravatar.cc/300?img=32",
-    "text": "A. Thomas delivered a breathtaking performance. Every song felt personal and heartfelt."
+    "name": "Leslie",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Incredible... how you put all of these together so fast. You're a great songwriter! You're my hero."
   },
   {
-    "name": "Evan White",
-    "image": "https://i.pravatar.cc/300?img=12",
-    "text": "An incredible artist whose voice instantly captures the room and keeps everyone engaged."
+    "name": "N.S.",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Your music offers chills in such a classic soulful style that we haven't heard in so long. The lyrics, your cadence, on how you flow with words and how you package your music is so special and unique."
   },
   {
-    "name": "Amelia Rose",
-    "image": "https://i.pravatar.cc/300?img=47",
-    "text": "One of the most talented performers I've ever seen. The audience was completely captivated."
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Willow is a creative genius. Her versatility is outstanding."
   },
   {
-    "name": "Michael Hart",
-    "image": "https://i.pravatar.cc/300?img=15",
-    "text": "Professional, passionate, and unforgettable. I'd highly recommend booking A. Thomas."
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Your work is beautiful and reminds me that vulnerability creates connection. I'm now realizing that."
+  },
+  {
+    "name": "N.D.",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "You are the absolute coolest. You're amazing and I love hearing you sing. Your voice suits this so much."
+  },
+  {
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "I'm so inspired. Love your energy, confidence, and work ethic."
+  },
+  {
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Willow, probably one of the most genuine souls I've ever met. She's a songwriter with so much soul and talent."
+  },
+  {
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "You're always so supportive. Appreciate you."
+  },
+  {
+    "name": "Mentee",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Your notes are so precise and clean."
+  },
+  {
+    "name": "Shel",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "So soulful. The production, omg it's great. Well done. I'm impressed."
+  },
+  {
+    "name": "MAS",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "You nailed it. Gosh your vocal control is amazing."
+  },
+  {
+    "name": "P. A.",
+    "image": "images/testimonial-placeholder.svg",
+    "text": "Life is too short to hold back."
+  },
+  {
+    "name": "Chloe",
+    "image": "images/chloe-guitar.jpeg",
+    "text": "She was the best."
   }
 ]

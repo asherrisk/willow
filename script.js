@@ -25,13 +25,13 @@ function createCard(testimonial, index) {
   image.src = testimonial.image;
   image.alt = testimonial.name;
 
-  const name = document.createElement('h2');
-  name.textContent = testimonial.name;
-
   const quote = document.createElement('p');
   quote.textContent = testimonial.text;
 
-  card.append(image, name, quote);
+  const name = document.createElement('h2');
+  name.textContent = testimonial.name;
+
+  card.append(image, quote, name);
 
   return card;
 }

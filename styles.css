@@ -446,6 +446,7 @@ h2 {
 /* TESTIMONIALS CAROUSEL */
 
 .testimonials-section {
+  background: var(--color-dark-section);
   padding: 66px 0 84px;
 }
 
@@ -484,25 +485,44 @@ h2 {
 }
 
 .testimonial-card img {
-  width: 140px;
-  height: 140px;
-  margin-bottom: 1.25rem;
+  width: 112px;
+  height: 112px;
+  margin-bottom: 1.4rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .testimonial-card h2 {
-  margin-bottom: 1.25rem;
-  color: var(--color-text);
-  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
   text-transform: none;
 }
 
 .testimonial-card p {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 3.2rem;
   color: var(--color-muted);
   font-family: var(--font-ui);
   font-size: 1rem;
   line-height: 1.7;
+  text-align: left;
+}
+
+.testimonial-card p::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.85rem;
+  left: 0;
+  color: var(--color-dark-section);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .position-active {

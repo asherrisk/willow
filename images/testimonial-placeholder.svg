@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Mentee testimonial placeholder</title>
+  <desc id="desc">A simple abstract portrait placeholder for testimonials without photos.</desc>
+  <rect width="300" height="300" fill="#dcebef"/>
+  <circle cx="150" cy="115" r="54" fill="#1d211f"/>
+  <path d="M64 258c12-56 45-88 86-88s74 32 86 88" fill="#1d211f"/>
+  <path d="M88 62c34-28 85-31 124-7" fill="none" stroke="#7356f2" stroke-width="14" stroke-linecap="round"/>
+</svg>
