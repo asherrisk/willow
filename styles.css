@@ -59,8 +59,8 @@ body {
 }
 
 .site-header {
-  height: 2rem;
-  padding: 0 56px;
+  min-height: 2rem;
+  padding: 6px 56px;
   border-bottom: 1px solid #c9d7da;
   display: flex;
   align-items: center;
@@ -95,7 +95,9 @@ body {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
+  justify-content: flex-end;
 }
 .hero {
   padding: 0 56px 36px;
@@ -233,6 +235,42 @@ body {
 
 .about-content__copy {
   /* font-size: var(--font-size--sm); */
+}
+
+.songwriting-section {
+  padding: 72px 56px;
+  background: var(--color-blue-section);
+}
+
+.songwriting-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(280px, 1fr);
+  gap: 48px;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.songwriting-image {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+.songwriting-copy {
+  max-width: 500px;
+}
+
+.songwriting-copy h2 {
+  margin-bottom: 28px;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  letter-spacing: 0;
+}
+
+.songwriting-copy p:not(.eyebrow) {
+  margin: 0 0 28px;
+  font-size: 1.15rem;
 }
 
 
@@ -403,6 +441,7 @@ h2 {
   .site-header,
   .hero,
   .about-section,
+  .songwriting-section,
   .inner {
     padding-left: 24px;
     padding-right: 24px;
@@ -411,6 +450,7 @@ h2 {
     font-size: 24vw;
   } */
   .hero-grid,
+  .songwriting-grid,
   .contact-grid,
   .footer-grid {
     grid-template-columns: 1fr;
@@ -423,6 +463,14 @@ h2 {
   .artist-photo {
     width: min(100%, 280px);
     height: auto;
+  }
+  .songwriting-section {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+  .songwriting-image {
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
   .center-copy,
   .contact-copy .lead {
